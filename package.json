@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server/index.js",
     "build-prod": "webpack --config webpack.prod.js",
-    "build-dev": "webpack --config webpack.dev.js"
+    "build-dev": "webpack-dev-server --config webpack.dev.js --open"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +24,7 @@
     "eslint": "^7.0.0",
     "eslint-config-google": "^0.14.0",
     "eslint-loader": "^4.0.2",
-    "html-webpack-plugin": "^4.3.0"
+    "html-webpack-plugin": "^4.3.0",
+    "webpack-dev-server": "^3.11.0"
   }
 }
