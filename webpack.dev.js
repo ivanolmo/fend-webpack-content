@@ -7,6 +7,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: './src/client/index.js',
+  output: {
+    libraryTarget: "var",
+    library: 'Client'
+  },
+  devtool: 'source-map',
   module: {
     rules: [
       {
